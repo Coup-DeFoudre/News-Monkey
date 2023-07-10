@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import News from "./News";
-// import Footer from './components/Footer';
+
 import Categories from "./components/Categories";
 import LoadingBar from "react-top-loading-bar";
 
