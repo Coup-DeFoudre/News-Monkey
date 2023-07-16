@@ -6,7 +6,7 @@ const NewsItem = (props) => {
   return (
     <div>
       <div className="card h-96 relative" style={{ width: "18rem" }}>
-        <span className="position-absolute top-0 start-64 translate-middle badge rounded-pill bg-danger z-50">
+        <span className="absolute z-50 text-white bg-danger text-sm font-semibold px-2 -right-1 -top-1 drop-shadow-lg rounded-sm">
           {source ? source : "Unknown"}
         </span>
         <div className="relative">
