@@ -21,7 +21,7 @@ const App = (props) => {
   const goToTop = () => {
     window.scrollTo(0, 0);
   };
-
+// eslint-disable-next-line
   let visible = false;
   window.addEventListener("scroll", () => {
     if (window.scrollY > 500) {
