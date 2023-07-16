@@ -18,11 +18,26 @@ const App = (props) => {
     setState({ progress: progress });
   };
 
+  const goToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  let visible = false;
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 500) {
+      visible = true;
+      document.getElementById("scrollTop").style.display = "block";
+    } else {
+      visible = false;
+      document.getElementById("scrollTop").style.display = "none";
+    }
+  });
   return (
     <BrowserRouter>
       <Navbar />
       <LoadingBar color="#f11946" progress={progress} />
       <Categories />
+      <button id="scrollTop" className="btn btn-sm font-semibold hover:bg-[#68FE9A] hidden fixed right-5 z-50 bottom-5 bg-[#68FE9A]" onClick={goToTop} >Back to top &uarr;</button>
       <Routes>
         <Route index element={<News setProgress={setProgress} />} />
         <Route

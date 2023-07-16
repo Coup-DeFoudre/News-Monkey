@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
+  
+
   return (
     <div className="sticky sticky-top ">
       <div className="navbar px-4 py-2 bg-[#24272C] flex items-center justify-start space-x-10 text-white">

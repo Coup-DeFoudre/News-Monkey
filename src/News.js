@@ -51,7 +51,7 @@ const News = (props) => {
 
   
     return (
-      <div className="m-5 space-y-5">
+      <div className=" m-5 space-y-5">
         <h1 className="text-3xl font-semibold text-white ">
           NewsMonkey-Top Headlines
         </h1>
