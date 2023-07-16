@@ -37,7 +37,13 @@ const App = (props) => {
       <Navbar />
       <LoadingBar color="#f11946" progress={progress} />
       <Categories />
-      <button id="scrollTop" className="btn btn-sm font-semibold hover:bg-[#68FE9A] hidden fixed right-5 z-50 bottom-5 bg-[#68FE9A]" onClick={goToTop} >Back to top &uarr;</button>
+      <button
+        id="scrollTop"
+        className="btn btn-sm font-semibold hover:bg-[#68FE9A] hidden fixed right-5 z-50 bottom-5 bg-[#68FE9A]"
+        onClick={goToTop}
+      >
+        Back to top &uarr;
+      </button>
       <Routes>
         <Route index element={<News setProgress={setProgress} />} />
         <Route
